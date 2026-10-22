@@ -1,0 +1,16 @@
+---
+description: Desfaz a última alteração quando o usuário escreve Undo
+alwaysApply: true
+---
+
+# Undo
+
+Quando a mensagem do usuário for a palavra **Undo** (maiúsculas ou minúsculas, sozinha), desfaça na hora a última alteração feita por você neste projeto.
+
+- Restaure cada arquivo tocado nessa alteração ao conteúdo de antes dela.
+- Se a alteração criou um arquivo, apague esse arquivo.
+- Não peça confirmação e não refaça a alteração em seguida.
+- Não use `git reset`, `git checkout` nem outros comandos que desfaçam commits ou mudanças fora dessa última alteração.
+- Se não houver alteração anterior para desfazer, diga isso em uma frase.
+
+Exemplo: o usuário pede um som no convite, você edita o HTML, depois ele envia `Undo`. O HTML volta a ficar como estava antes do som.
